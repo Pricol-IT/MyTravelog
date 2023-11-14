@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTravelog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="account">
+            <div class="avatar">
+                <p>UN</p>
+            </div>
+            <div class="username">
+                <p>username</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="menu" id="btn"><i class='bx bx-menu'></i></div>
+        <div class="menu-items">
+            <ul>
+                <li><a href="#"><i class='bx bxs-home'></i><div class="menu-item">Home</div> </a></li>
+                <li><a href="#"><i class='bx bx-trip' ></i><div class="menu-item">Trip</div> </a></li>
+                <li><a href="#"><i class='bx bxs-file-blank'></i><div class="menu-item">Documents</div> </a></li>
+                <li><a href="#"><i class='bx bxs-wallet'></i><div class="menu-item">Expenses</div> </a></li>
+                
+            </ul>
+        </div>
+
+        <div class="setting">
+            <div class="account setting-item"><i class='bx bxs-user'></i><div class="menu-item">Account</div></div>
+            <div class="logout setting-item"><i class='bx bxs-log-in'></i><div class="menu-item">Logout</div></div>
+        </div>
+        
+    </div>
+
+
+
+    <!-- main-content -->
+
+    <div class="main-content">
+        <h1>hi</h1>
+    </div>
+
+
+
+    <!-- scripts -->
+    <script>
+        var btn = document.querySelector("#btn");
+        var sidebar = document.querySelector(".sidebar");
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+            console.log("working")
+        };
+    </script>
+
+</body>
+
+</html>
