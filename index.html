@@ -2,70 +2,476 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyTravelog</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MyTravelog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="logo">
-        </div>
-        <div class="account">
-            <div class="avatar">
-                <p>UN</p>
-            </div>
-            <div class="username">
-                <p>username</p>
-            </div>
-        </div>
-    </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
 
-    <!-- sidebar -->
-    <div class="sidebar">
-        <div class="menu" id="btn"><i class='bx bx-menu'></i></div>
-        <div class="menu-items">
-            <ul>
-                <li><a href="#"><i class='bx bxs-home'></i><div class="menu-item">Home</div> </a></li>
-                <li><a href="#"><i class='bx bx-trip' ></i><div class="menu-item">Trip</div> </a></li>
-                <li><a href="#"><i class='bx bxs-file-blank'></i><div class="menu-item">Documents</div> </a></li>
-                <li><a href="#"><i class='bx bxs-wallet'></i><div class="menu-item">Expenses</div> </a></li>
-                
-            </ul>
-        </div>
-
-        <div class="setting">
-            <div class="account setting-item"><i class='bx bxs-user'></i><div class="menu-item">Account</div></div>
-            <div class="logout setting-item"><i class='bx bxs-log-in'></i><div class="menu-item">Logout</div></div>
-        </div>
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
         
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">0</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <!-- <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a> -->
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bx bxs-home"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i class="bx bx-trip"></i><span>Trip</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Add Trip</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>My Trip</span>
+            </a>
+          </li>
+          
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#document" data-bs-toggle="collapse" href="#">
+          <i class="bx bxs-file-blank"></i><span>Documents</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="document" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Add Trip</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>My Trip</span>
+            </a>
+          </li>
+          
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#expense" data-bs-toggle="collapse" href="#">
+          <i class="bx bxs-wallet"></i><span>Expenses</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="expense" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Add Trip</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>My Trip</span>
+            </a>
+          </li>
+          
+        </ul>
+      </li>
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 username">
+                <h2>Hi!<br>Username</h2>
+            </div>
+            <div class="col-lg-8 col-md-6 ontrip d-flex align-items-center  justify-content-between px-lg-5 px-md-5 px-sm-4 mt-3 rounded fw-3 fs-6 text-white tripdetails">
+                <div class=" fw-bold ">Trip #01</div>
+                <div class="">Trip name</div>
+                <div class=" fw-bold"> 06 Days left</div>
+            </div>
+        </div>
+        <form class="addtrip "> 
+            <div class="row pb-sm-1 pb-lg-0">
+              <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
+                  <input type="text" name="" class="form-control" placeholder="Enter Trip Name">
+              </div>
+            <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
+                <input type="date" name="" class="form-control" placeholder="From Date"> 
+            </div>
+            <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
+                <input type="date" name="" class="form-control">
+            </div>
+            <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
+                <input type="submit" class="btn form-control btn-primary" name="" value="Add Trip">
+            </div>  
+        </div>
+        </form>
+        <div class="row">
+            <section class="section dashboard">
+              <div class="row ">
+                <div class="    col-lg-6   ">
+                    <div class="card shadow p-3 mb-5 text-white mytrip-section">
+                    <div class="heading d-flex justify-content-between ">
+                        <h2>My Trip</h2>
+                        <a href="#" class="text-decoration-none text-white" style="cursor: pointer;">View More >>></a>
+                    </div>
+                    <br>
+                    <div class="heading d-flex justify-content-between mt-1">
+                        <p>Air tickets</p>
+                        <div class="status d-flex">
+                            <div class=" shadow indicator m-2"></div>
+                            <p>Approval Status</p>
+                        </div>
+
+                    </div>
+                    <div class="heading d-flex justify-content-between ">
+                        <p>Hotel </p>
+                        <div class="status d-flex">
+                            <div class="shadow indicator m-2" style="background-color: orange !important;"></div>
+                            <p>Approval Status</p>
+                        </div>
+                    </div>
+                    <div class="heading d-flex justify-content-between ">
+                        <p>Taxi</p>
+                        <div class="status d-flex">
+                            <div class=" shadow indicator m-2"></div>
+                            <p>Approval Status</p>
+                        </div>
+                    </div>
+                    <div class="heading d-flex justify-content-between ">
+                        <p>Advance</p>
+                        <div class="status d-flex">
+                            <div class=" shadow indicator m-2"></div>
+                            <p>Approval Status</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class=" p-3 rounded bg-theme shadow">
+                        <!-- Default Tabs -->
+                        <ul class="nav nav-tabs d-flex bg-theme divch"  id="myTabjustified"
+                            role="tablist">
+                            <li class="nav-item flex-fill" role="presentation">
+                                <button class="nav-link w-100 active" id="Upcoming-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Upcoming-justified" type="button" role="tab"
+                                    aria-controls="Upcoming" aria-selected="true">Upcoming</button>
+                            </li>
+                            <li class="nav-item flex-fill" role="presentation">
+                                <button class="nav-link w-100" id="Recent-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Recent-justified" type="button" role="tab" aria-controls="Recent"
+                                    aria-selected="false">Recent</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2" id="myTabjustifiedContent">
+                            <div class="tab-pane fade show active" id="Upcoming-justified" role="tabpanel"
+                                aria-labelledby="Upcoming-tab">
+                                <div class="tripcard p-2 rounded shadow" style="background-color: #fff; color:#0072BC">
+                                    <div class=" d-flex justify-content-between">
+                                        <p><b>Trip id</b> : 200020200 </p>
+                                        <p><b>Date :</b> 13/02/2023 </p>
+                                        <p><b>To :</b> 13/02/2023</p>
+                                    </div>
+                                    <div class=" d-flex justify-content-between">
+                                        <h5>Trip name</h5>
+                                        <p>Origin</p>
+                                        <p>Destination</p>
+                                    </div>
+                                </div>
+ 
+                                <div class="tripcard p-2 rounded shadow mt-1"
+                                    style="background-color: #fff; color:#0072BC">
+                                    <div class=" d-flex justify-content-between">
+                                        <p><b>Trip id</b> : 200020200 </p>
+                                        <p><b>Date :</b> 13/02/2023 </p>
+                                        <p><b>To :</b> 13/02/2023</p>
+                                    </div>
+                                    <div class=" d-flex justify-content-between">
+                                        <h5>Trip name</h5>
+                                        <p>Origin</p>
+                                        <p>Destination</p>
+                                    </div>
+                                </div>
+ 
+ 
+                            </div>
+                            <div class="tab-pane fade" id="Recent-justified" role="tabpanel"
+                                aria-labelledby="Recent-tab">
+                                <div class="tripcard p-2 rounded shadow" style="background-color: #fff; color:#0072BC">
+                                    <div class=" d-flex justify-content-between">
+                                        <p><b>Trip id</b> : 200020200 </p>
+                                        <p><b>Date :</b> 13/02/2023 </p>
+                                        <p><b>To :</b> 13/02/2023</p>
+                                    </div>
+                                    <div class=" d-flex justify-content-between">
+                                        <h5>Trip name</h5>
+                                        <p>Origin</p>
+                                        <p>Destination</p>
+                                    </div>
+                                </div>
+ 
+                                <div class="tripcard p-2 rounded shadow mt-1"
+                                    style="background-color: #fff; color:#0072BC">
+                                    <div class=" d-flex justify-content-between">
+                                        <p><b>Trip id</b> : 200020200 </p>
+                                        <p><b>Date :</b> 13/02/2023 </p>
+                                        <p><b>To :</b> 13/02/2023</p>
+                                    </div>
+                                    <div class=" d-flex justify-content-between">
+                                        <h5>Trip name</h5>
+                                        <p>Origin</p>
+                                        <p>Destination</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+              <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Approvals</h5>
+
+                      <!-- Radial Bar Chart -->
+                      <div id="radialBarChart"></div>
+
+                      <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                          new ApexCharts(document.querySelector("#radialBarChart"), {
+                            series: [50, 50, 50, 100],
+                            chart: {
+                              height: 280,
+
+                              type: 'radialBar',
+                              toolbar: {
+                                show: true
+                              }
+                            },
+                            plotOptions: {
+                              radialBar: {
+                                dataLabels: {
+                                  name: {
+                                    fontSize: '22px',
+                                  },
+                                  value: {
+                                    fontSize: '16px',
+                                  },
+                                  total: {
+                                    show: true,
+                                    label: 'Approvals',formatter: function(w) {
+                                      // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                                      return 4
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            labels: ['Advance', 'Taxi', 'Hotel', 'Air'],
+                          }).render();
+                        });
+                      </script>
+                      <!-- End Radial Bar Chart -->
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                    
+                        <div id='calendar' ></div>
+                    
+                    
+                </div>
+                <!-- Left side columns -->
+             </div>
+             
+            </section>
+        </div>
+
     </div>
 
+    
 
+  </main><!-- End #main -->
 
-    <!-- main-content -->
-
-    <div class="main-content">
-        <h1>hi</h1>
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
     </div>
+    <div class="credits">
+      
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer> --><!-- End Footer -->
 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- scripts -->
-    <script>
-        var btn = document.querySelector("#btn");
-        var sidebar = document.querySelector(".sidebar");
-        btn.onclick = function () {
-            sidebar.classList.toggle('active');
-            console.log("working")
-        };
-    </script>
-
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+jSuites.calendar(document.getElementById('calendar'),{
+    format: 'DD/MM/YYYY'
+});
+</script>
 </body>
 
 </html>
