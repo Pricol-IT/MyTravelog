@@ -1349,9 +1349,7 @@ border-radius: 10px!important;
 
 }
 
-.urbox {
-  min-height: 340px;
-}
+
 
 .urbox-card {
   padding: 1em;
@@ -1395,3 +1393,19 @@ border-radius: 10px!important;
     border-left: 2px dotted #0072BC;
     
   }
+
+  @media (min-width: 600px) and (max-width: 992px) {
+
+    .urbox {
+      height: 360px;
+    }
+  }
+
+  .urbox {
+  min-height: 350px;
+
+}
+
+.urbox1 {
+  height:390px;
+}
