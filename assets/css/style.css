@@ -1250,6 +1250,9 @@ h6 {
   .tripdetails div{
     font-size: 14px;
 }
+.trip-card p {
+  font-size: 12px!important;
+}
 }
 
 .bg-theme{
@@ -1267,6 +1270,14 @@ h6 {
     border-radius: 100%;
     background-color: rgb(0, 255, 0);
 }
+
+.indicator-o {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(255, 165, 0);
+}
+
 .listtrip
 {
   background-color: #0072BC !important;
@@ -1318,8 +1329,17 @@ border-radius: 10px!important;
  
 .tripcard h5{
     font-size: 16px;
+
 }
- 
+
+.trip-card {
+  flex-direction: column!important;
+}
+ .vl {
+  border-top: 2px dotted #0072BC;
+  margin: 10px 0;
+  border-left: 0px dotted #0072BC!important;
+ }
 }
 
 .calendarview {
@@ -1328,3 +1348,50 @@ border-radius: 10px!important;
 /*  padding: 0.5em;*/
 
 }
+
+.urbox {
+  min-height: 340px;
+}
+
+.urbox-card {
+  padding: 1em;
+  background: #0072bc;
+
+}
+
+ .trip-card h5 {
+  font-weight: 800!important;
+}
+.tripcard{
+    border-left: solid 10px orange;
+    height: 90px;
+}
+ 
+#Recent-justified .tripcard{
+    border-left: solid 10px rgb(0, 255, 55);
+    height: 90px;
+}
+ 
+.trip-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    color: #0072BC;
+
+/*    max-height: 130px;*/
+
+}
+
+.trip-card p {
+  margin: 2px auto;
+  font-size: 14px;
+}
+.trip-card h5 {
+  font-size: 14px;
+}
+ 
+.vl {
+    border-left: 2px dotted #0072BC;
+    
+  }
