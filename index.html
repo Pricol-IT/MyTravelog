@@ -60,12 +60,12 @@
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">0</span>
+            <span class="badge bg-primary badge-number">1</span>
           </a><!-- End Notification Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
-              You have 4 new notifications
+              You have 1 new notifications
               <!-- <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a> -->
             </li>
             <li>
@@ -73,7 +73,11 @@
             </li>
 
             <li class="notification-item">
-              
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>New Trip Created Successfully</h4>
+                <p>1 min. ago</p>
+              </div>
             </li>
 
             <li>
@@ -98,12 +102,12 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2">User</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
+              <h6>User</h6>
               <span>Web Designer</span>
             </li>
             <li>
@@ -172,12 +176,12 @@
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="#">
+            <a href="index.html">
               <i class="bi bi-circle"></i><span>Add Trip</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="mytrip.html">
               <i class="bi bi-circle"></i><span>My Trip</span>
             </a>
           </li>
@@ -228,16 +232,16 @@
   <main id="main" class="main">
     <div class="container">
         
-        <form class="addtrip "> 
+        <form class="addtrip " action="addtrip.html"> 
             <div class="row pb-sm-1 pb-lg-0">
               <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
-                  <input type="text" name="" class="form-control" placeholder="Enter Trip Name">
+                  <input type="text" name="tripname" class="form-control" required placeholder="Enter Trip Name">
               </div>
             <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
-                <input type="date" name="" class="form-control" placeholder="From Date"> 
+                <input type="date" name="tfdate" class="form-control" required placeholder="From Date"> 
             </div>
             <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
-                <input type="date" name="" class="form-control">
+                <input type="date" name="ttdate" required class="form-control">
             </div>
             <div class="col-lg-3 col-md-6 pb-sm-1 pb-lg-0">
                 <input type="submit" class="btn form-control btn-primary" name="" value="New Trip">

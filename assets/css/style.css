@@ -1322,7 +1322,19 @@ border-radius: 10px!important;
 
 @media (max-width : 600px){
    
- 
+ .sws .col-sm-6
+ {
+  width: 50%;
+ }
+
+ .sws h5 {
+  font-size: 12px!important;
+ }
+
+
+ .sws i {
+  font-size: 14px;
+ }
 .tripcard p{
     font-size: 12px;
 }
@@ -1330,6 +1342,10 @@ border-radius: 10px!important;
 .tripcard h5{
     font-size: 16px;
 
+}
+
+.tbox h5,.tbox p {
+  font-size: 14px;
 }
 
 .trip-card {
@@ -1399,6 +1415,14 @@ border-radius: 10px!important;
     .urbox {
       height: 360px;
     }
+.mdright {
+  text-align: right;
+}
+    
+
+     .sws h5 {
+      font-size: 14px!important;
+     }
   }
 
   .urbox {
@@ -1408,4 +1432,61 @@ border-radius: 10px!important;
 
 .urbox1 {
   height:390px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.tbox {
+  background: #fff;
+  color:#000;
+  border: 1px solid #0072bc;
+  padding: 1em;
+}
+
+.tbox h5, .tbox p {
+  margin: 0 ;
+}
+
+.vl1 {
+  border-left: 2px dotted #0072BC;
+  padding: 0px 0.5em;
+}
+
+.service {
+  background: #fff;
+  color: #000;
+  padding: 0.5em ;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.service i, .service img {
+  padding: 10px;
+  background: #0072bc;
+  color:#fff;
+  font-size: 28px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 100%;
+  /*outline: 1px double #0072bc;
+  outline-offset: 2px;*/
+}
+
+.sws h5 {
+  font-size: 18px;
+}
+.remove {
+  background: #fff;
+  color: #0072bc;
+  margin: 0;
+  padding: 0 5px;
+  border-radius: 25px;
+}
+
+.boxv {
+  background: #fff;
+  padding: 5px;
+  color:#0072bc;
 }
