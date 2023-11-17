@@ -230,10 +230,63 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
-    <div class="container">
-        
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
 
-    </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">My Trip Details</h5>
+              
+
+              <!-- Table with stripped rows -->
+              <div class="table-responsive">
+                <table class="table datatable">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Trip ID</th>
+                    <th scope="col">Trip Name</th>
+                    <th scope="col">From Date</th>
+                    <th scope="col">To Date</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="card">
+                    <td>1</td>
+                    <td>2002020020</td>
+                    <td>Mumbai To coimbatore</td>
+                    <td>2023-05-25 </td>
+                    <td> 2023-05-29</td>
+                    <td><span class="text-danger">Request</span></td>
+                    
+                    <td><a href="#." class="btn btn-warning text-white">View Summary</a></td>
+                  </tr>
+                  <tr class="card">
+                    <td >2</td>
+                    <td>2002022220</td>
+                    <td>Coimbatore Trip</td>
+                    <td>2023-06-05 </td>
+                    <td>  2023-06-05</td>
+                    <td><span class="text-success">Approved</span></td>
+                    
+                    <td><a href="#." class="btn btn-warning text-white">View Summary</a></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              </div>
+              
+              <!-- End Table with stripped rows -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     
 
@@ -255,11 +308,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-<script>
-jSuites.calendar(document.getElementById('calendar'),{
-    format: 'DD/MM/YYYY'
-});
-</script>
+
 </body>
 
 </html>
