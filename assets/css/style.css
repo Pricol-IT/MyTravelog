@@ -1321,7 +1321,18 @@ border-radius: 10px!important;
 }
 
 @media (max-width : 600px){
-   
+.rdetails thead {
+  display: none;
+}
+.rdetails tbody td {
+  display: block;
+}
+
+.rdetails p,.rdetails legend {
+
+  font-size: 14px;
+}
+
  .sws .col-sm-6
  {
   width: 50%;
@@ -1489,4 +1500,29 @@ border-radius: 10px!important;
   background: #fff;
   padding: 5px;
   color:#0072bc;
+}
+
+.rdetails table 
+{
+  width:100%;
+  background: #fff;
+  border:1px solid #0072bc;
+
+
+}
+.rdetails thead{
+  border-radius: 10px!important;
+}
+.rdetails table tr {
+  border-bottom: 1px solid #0072bc;
+}
+.rdetails thead td,.rdetails table td{
+  padding: 0.5em;
+
+}
+
+.rdetails p,.rdetails legend {
+
+  font-size: 16px;
+  margin: 0 ;
 }
