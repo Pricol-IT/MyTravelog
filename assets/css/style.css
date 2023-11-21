@@ -1327,7 +1327,9 @@ border-radius: 10px!important;
 .rdetails tbody td {
   display: block;
 }
-
+.dtdiv h5 {
+ font-size: 14px;
+}
 .rdetails p,.rdetails legend {
 
   font-size: 14px;
@@ -1526,3 +1528,49 @@ border-radius: 10px!important;
   font-size: 16px;
   margin: 0 ;
 }
+
+.dtdiv h5 {
+  margin: 0;
+}
+.headdiv
+    {
+      text-align: center;
+      position: relative;
+      padding: 15px 0;
+      color: #0072bc;
+    }
+    .headdiv:before {
+        content: "";
+        display: block;
+        width: 25%;
+        height: 2px;
+        background: #0072bc;
+        left: 0;
+        top: 50%;
+        position: absolute;
+      }
+      .headdiv:after {
+        content: "";
+        display: block;
+        width: 25%;
+        height: 2px;
+        background: #0072bc;
+        right: 0;
+        top: 50%;
+        position: absolute;
+      }
+
+      @media (min-width:550px) and (max-width:768px)
+      {
+        .headdiv:before, .headdiv:after {
+          width: 20%;
+        }
+      }
+
+      @media(max-width:550px)
+      {
+        .headdiv:before, .headdiv:after {
+          width: 0%;
+        }
+
+      }
